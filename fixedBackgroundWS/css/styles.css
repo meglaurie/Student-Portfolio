@@ -1,0 +1,560 @@
+*{
+  margin:0;
+}
+.wrapper{
+  width:80%;
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+html, body{
+  height:100%;
+}
+
+h1,h2,h3,h4,h5,h6{
+  margin-bottom: 20px;
+}
+h1{
+  text-align: center;
+  padding-bottom: 30px;
+  font-family: 'Monoton', cursive;
+}
+
+h2{
+  font-family: 'Overlock', sans-serif;
+}
+
+p {
+  font-family: 'Overlock', sans-serif;
+}
+/*Navigation*/
+nav{
+  height:50px;
+  width:100%;
+  background:rgba(0,0,0,0.5);
+  position: fixed;
+  z-index: 99;
+  color: white;
+  font-family: 'Overlock', sans-serif;
+}
+
+.logobox{
+  height:50px;
+  width:50px;
+  background-color: purple;
+  float: left;
+}
+
+.plane{
+  font-size: 40px;
+  text-align: center;
+  padding: 7px;
+}
+
+#Hmenu{
+  float:right;
+  display: none;
+}
+@media(max-width:700px){
+  #Hmenu{
+    display: block;
+  }
+  nav a{
+    display: none;
+  }
+}
+
+nav a{
+  color:white;
+  text-decoration: none;
+  float: right;
+  font-size: 25px;
+  padding: 10px;
+}
+.sidenav {
+    padding-top: 30%;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.5s;
+    /*padding-top: 60px;*/
+    text-align:center;
+    z-index: 999;
+}
+
+.sidenav a {
+
+    padding: 16px 16px 16px 32px;
+    text-decoration: none;
+    font-size: 40px;
+    color: white;
+    display: block;
+    transition: 0.3s
+
+}
+
+.sidenav a:hover{
+    color: purple;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/*HERO*/
+.heroTxt{
+  color:white;
+  text-align: center;
+
+}
+.heroTxt h1{
+  padding-top: 40vh;
+  font-size: 80px;
+}
+.heroTxt p{
+  font-size: 30px;
+}
+/*Main Content*/
+.box-div{
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  height:200px;
+
+}
+.card{
+  height: 200px;
+  width: 32%;
+  background: purple;
+  display: inline-block;
+  overflow: visible;
+  /*margin-bottom: 30px;*/
+}
+
+.card-section{
+  overflow: visible;
+  height: auto;
+}
+
+
+/*Hover Effect*/
+
+/*Makes white text appear*/
+.grid figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: .5%;
+	width: 32%;
+}
+
+/*sets opaque purple overlay*/
+.grid figure .card {
+	display: block;
+	opacity: 0.8;
+}
+
+/*Text position color and size*/
+.grid figure figcaption {
+	padding: 2em;
+	color: #fff;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+
+/*Makes h2 and p text appear*/
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+}
+
+.grid figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+/*EFFECT COLOUR*/
+figure.effect {
+	background: purple;
+}
+
+figure.effect .card {
+	max-width: none;
+	width: -webkit-calc(100% + 20px);
+	width: calc(100% + 20px);
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-10px,0,0);
+	transform: translate3d(-10px,0,0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+/*Makes p text appear and purple opactit darker*/
+figure.effect:hover .card {
+	opacity: 0.4;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+/*Underline position*/
+figure.effect h2 {
+	position: relative;
+	overflow: hidden;
+	padding: 0.5em 0;
+}
+
+/*Underline appear and slide*/
+figure.effect h2::after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background: #fff;
+	content: '';
+  /*^ need this to work??*/
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(-100%,0,0);
+	transform: translate3d(-100%,0,0);
+}
+
+/*Underline appear for hover effect*/
+figure.effect:hover h2::after {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+/*Hides P text and sets slide in position*/
+figure.effect p {
+	/*padding: 1em 0;*/
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(100%,0,0);
+	transform: translate3d(100%,0,0);
+}
+
+/*Hover p text appear and slide in*/
+figure.effect:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+
+/*CARD IMAGES*/
+.card-1{
+  background-image: url('../images/sunglasses.gif');
+  background-position: 50% 50%;
+  -webkit-background-size:cover;
+     -moz-background-size:cover;
+       -o-background-size:cover;
+          background-size:cover;
+}
+.card-2{
+  background-image: url('../images/travel.gif');
+  background-position: 50% 50%;
+  -webkit-background-size:cover;
+     -moz-background-size:cover;
+       -o-background-size:cover;
+          background-size:cover;
+}
+.card-3{
+  background-image: url('../images/beach.gif');
+  background-position: 50% 50%;
+  -webkit-background-size:cover;
+     -moz-background-size:cover;
+       -o-background-size:cover;
+          background-size:cover;
+}
+
+
+
+@media(max-width:700px){
+  .card{
+    height:150px;
+    width:90%;
+    display: block;
+    margin-left: 13%;
+  }
+}
+
+.sect{
+  height:100%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.subSection{
+  padding-top: 5%;
+  height: auto;
+  background-color: black;
+  color:white;
+  overflow: visible;
+  padding-bottom: 100px;
+
+}
+
+.card-section{
+  overflow: visible;
+  height: auto;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.sectOne{
+  background-image: url('../images/da-nang.gif');
+
+}
+.sectTwo{
+    background-image: url('../images/Singapore.gif');
+
+}
+.sectThree{
+    background-image: url('../images/Newyork.gif');
+
+}
+.sectFour{
+    background-image: url('../images/Paris.gif');
+}
+
+/*About Section*/
+.fiftybox{
+  display: inline-block;
+  overflow: visible;
+  padding-bottom: 5%;
+
+}
+.aboutPic{
+  float: left;
+  background-image: url('../images/travel.gif');
+  width:48%;
+  height:300px;
+
+}
+.aboutInfo{
+  float: right;
+  width:48%;
+
+}
+@media(max-width:960px){
+  .fiftybox{
+    display: block;
+    overflow: visible;
+    height:500px;
+  }
+  .aboutPic{
+    width: 98%;
+  }
+  .aboutInfo{
+    width:98%;
+    padding-right: 25px;
+  }
+}
+
+#aboutSect{
+  padding-bottom: 5%;
+  padding-top: 5%;
+}
+
+ footer{
+   height:200px;
+   background-color: black;
+ }
+ footer a{
+   color: white;
+   float: right;
+   padding: 10px;
+   margin-top: 70px;
+   font-size: 30px;
+ }
+ a:hover{
+   color: purple;
+ }
+
+
+/*CONTACT FORM*/
+.content{
+  text-align: center;
+}
+
+.button{
+  padding: 10px;
+  margin:50px 0px;
+  font-size: 15px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  /*background-color: purple;*/
+    background: purple; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(red, purple); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(red, purple); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(red, purple); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(red, purple); /* Standard syntax (must be last) */
+}
+
+/*Positions text and animated boxes*/
+.input {
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	margin: 3em;
+	max-width: 350px;
+	width: calc(100% - 3em);
+}
+
+/*Makes white input box hidden */
+.input__field {
+	position: relative;
+	display: block;
+	float: right;
+	padding: 1.4em;
+	width: 60%;
+	border: none;
+}
+
+/*Makes Ugly blue focus input box hidden*/
+.input__field:focus {
+	outline: none;
+}
+
+/*Input label text size and spacing*/
+.input__label {
+	display: inline-block;
+	float: right;
+	padding: .3em 1em;
+  font-size: 25px;
+}
+
+/*Positions input label in input box*/
+.graphic {
+	position: absolute;
+	top: 0;
+	left: 0;
+	fill: none;
+}
+
+/*Controls spacing of input boxes*/
+.input--effect {
+	margin: 1.1em;
+}
+
+/*Input feild background*/
+.input__field--effect {
+	width: 100%;
+	background: transparent;
+	color: purple;
+}
+
+/*Input text colour and positioning*/
+.input__label--effect {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	color: purple;
+	text-align: left;
+}
+
+/*INPUT FEILD LINE Animation*/
+.graphic--effect {
+	-webkit-transform: scale3d(1, -1, 1);
+	transform: scale3d(1, -1, 1);
+	-webkit-transition: stroke-dashoffset 0.3s;
+	transition: stroke-dashoffset 0.3s;
+	pointer-events: none;
+	stroke: purple;
+	stroke-width: 4px;
+	stroke-dasharray: 962;
+	stroke-dashoffset: 558;
+}
+
+/*Makes animate after click*/
+.input__field--effect:focus + .input__label--effect .graphic--effect,
+.input--filled .graphic--effect {
+	stroke-dashoffset: 0;
+}
+
+
+/*RESPONSIVE*/
+@media(min-width:900px){
+  h2{
+    margin-top: 0px;
+  }
+  .box-div{
+    margin: 0 auto;
+  }
+  .card{
+    height:220px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+  .grid figure {
+    height:220px;
+    margin: 1px;
+  }
+
+}
+
+@media(max-width:832px){
+  h2{
+    margin-top: 0px;
+  }
+  .box-div{
+    margin: 0 auto;
+  }
+  .card{
+    height:190px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+  .grid figure {
+  	width: 32%;
+    height:190px;
+    margin: 1px;
+  }
+  .card-section{
+    margin; 0 auto;
+
+  }
+
+}
+
+@media(max-width:650px){
+  .box-div{
+    margin: 0 auto;
+  }
+  .card{
+    width: 98%;
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+  .grid figure {
+  	width: 98%;
+  }
+  .card-section{
+    margin-left: -10%;
+
+  }
+
+
+}

@@ -1,0 +1,245 @@
+.graphicDesignCont{
+  margin-bottom: 50px;
+  overflow: auto;
+  // This .box class is also used in the Apps section.
+  .box{
+    height:300px;
+    width: 33%;
+    display: inline-block;
+  }
+
+  @media (max-width:880px){
+    margin-left: -4%;
+      .box{
+        height:200px;
+        width: 48%;
+      }
+      .gdbox-icon-container{
+        height:200px;
+        overflow: hidden;
+        font-size: 15px;
+        padding-top: 5px;
+      }
+  }
+  @media (max-width:600px){
+    margin-left:0px;
+    .box{
+      height:220px;
+      width: 90%;
+      margin: 0% 5%;
+    }
+    .gdbox-icon-container{
+      height: 220px;
+    }
+  }
+}
+
+.box{
+  height:300px;
+  width:33%;
+  margin: 1px;
+  float: right;
+
+  // transition: 0.4s;
+  p{
+    font-family: $font2;
+  }
+
+  color: white;
+  font-size: 20px;
+  text-align: center;
+
+
+
+  }
+
+.gdbox-icon-container{
+  background: #0f0e0e;
+  width: 100%;
+  height: 300px;
+  color: white;
+  padding: 10px;
+  opacity: 0;
+  transition: 0.4s;
+  padding-top: 20px;
+  // transform: translateX(0px);
+  a{
+    padding-bottom: 15px;
+    text-align: center;
+  }
+
+}
+
+.box:hover .gdbox-icon-container{
+// transform: translateX(0px);
+opacity: 0.8;
+}
+
+// @media (max-width:880px){
+//   .gdbox-icon-container{
+//     height:200px;
+//     overflow: hidden;
+//     font-size: 15px;
+//     padding-top: 5px;
+//   }
+// }
+
+.neonlight{
+
+  background-image:
+  url('../images/BannedBookClub.gif');
+  background-position: 35% 75%;
+  -webkit-background-size:cover;
+     -moz-background-size:cover;
+       -o-background-size:cover;
+          background-size:cover;
+
+}
+
+.bobMarley{
+
+  background-image:
+  url('../images/BobMarley.gif');
+  background-position: 50% 50%;
+  -webkit-background-size:cover;
+     -moz-background-size:cover;
+       -o-background-size:cover;
+          background-size:cover;
+
+}
+
+.photoshop1{
+
+  background-image:
+  url('../images/Cambodia.jpg');
+  background-position: 50% 50%;
+  -webkit-background-size:cover;
+     -moz-background-size:cover;
+       -o-background-size:cover;
+          background-size:cover;
+
+}
+.photoshop2 {
+
+  background-image:
+  url('../images/Myanmar.jpg');
+  background-position: 50% 50%;
+  -webkit-background-size:cover;
+     -moz-background-size:cover;
+       -o-background-size:cover;
+          background-size:cover;
+
+}
+.photoshop3 {
+
+  background-image:
+  url('../images/record-logo.gif');
+  background-position: 50% 50%;
+  -webkit-background-size:cover;
+     -moz-background-size:cover;
+       -o-background-size:cover;
+          background-size:cover;
+
+}
+
+.code {
+  background-image:
+  url('../images/Code.gif');
+  background-position: 50% 50%;
+  -webkit-background-size:cover;
+     -moz-background-size:cover;
+       -o-background-size:cover;
+          background-size:cover;
+
+}
+
+.bali {
+  background-image:
+  url('../images/BaliTourism.gif');
+  background-position: 50% 50%;
+  -webkit-background-size:cover;
+     -moz-background-size:cover;
+       -o-background-size:cover;
+          background-size:cover;
+
+}
+
+.businessCard{
+
+  background-image:
+  url('../images/businessCardGD.gif');
+  background-position: 50% 100%;
+  -webkit-background-size:cover;
+     -moz-background-size:cover;
+       -o-background-size:cover;
+          background-size:cover;
+
+}
+
+.illustrator{
+
+  background-image:
+  url('../images/Illustrator-logo.png');
+  background-position: 50% 50%;
+  -webkit-background-size:cover;
+     -moz-background-size:cover;
+       -o-background-size:cover;
+          background-size:cover;
+
+}
+
+.machupicchu{
+  background-image:
+  url('../images/machupicchu.gif');
+  background-position: 0% 0%;
+  -webkit-background-size:cover;
+     -moz-background-size:cover;
+       -o-background-size:cover;
+          background-size:cover;
+}
+
+.NYC{
+
+  background-image:
+  url('../images/NewyorkCity.gif');
+  background-position: 30% 60%;
+  -webkit-background-size:cover;
+     -moz-background-size:cover;
+       -o-background-size:cover;
+          background-size:cover;
+
+}
+.Dphoto{
+
+  background-image:
+  url('../images/einstein3D.gif');
+  background-position: 50% 50%;
+  -webkit-background-size:cover;
+     -moz-background-size:cover;
+       -o-background-size:cover;
+          background-size:cover;
+
+}
+.Fridaphoto{
+
+  background-image:
+  url('../images/FridaWaterColor.gif');
+  background-position: 50% 50%;
+  -webkit-background-size:cover;
+     -moz-background-size:cover;
+       -o-background-size:cover;
+          background-size:cover;
+
+}
+
+.NatGeo{
+
+  background-image:
+  url('../images/PSNatGeoCover.gif');
+  background-position: 0% 0%;
+  -webkit-background-size:cover;
+     -moz-background-size:cover;
+       -o-background-size:cover;
+          background-size:cover;
+
+}

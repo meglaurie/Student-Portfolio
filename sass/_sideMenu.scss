@@ -1,0 +1,29 @@
+#mobileMenu{
+    display: none;
+    background: black;
+    list-style: none;
+    text-align: left;
+    padding-top: 120px;
+    padding-left:40px;
+    overflow: scroll;
+    transition: 0.5s;
+    z-index: 1;
+
+
+    li{
+      padding: 20px;
+      padding-top: 10px;
+    }
+    h2 a{
+      font-family: $font1;
+    }
+     a{
+      color:white;
+      font-size: 25px;
+      text-decoration: none;
+      font-family: $font2;
+    }
+    a:hover{
+      color:$hoverColor;
+    }
+  }

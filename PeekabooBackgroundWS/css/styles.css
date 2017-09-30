@@ -1,0 +1,617 @@
+*{
+  margin:0;
+}
+.wrapper{
+  width:80%;
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+html, body{
+  height:100%;
+}
+
+h1,h2,h3,h4,h5,h6{
+  margin-bottom: 20px;
+}
+h2 {
+  margin-top:50px;
+}
+
+h1{
+  font-family: 'Crushed', cursive;
+}
+
+h2 p{
+  font-family: 'Carrois Gothic', sans-serif;
+}
+
+.heroTxt{
+  font-size: 60px;
+  text-align: center;
+}
+/*NAVIGATION*/
+nav{
+  height:75px;
+  width:100%;
+  /*background:rgba(0,0,0,0.5);*/
+  background: #f2f2f2;
+  position: fixed;
+  padding-right: 20%;
+  z-index: 99;
+
+  text-align: center;
+}
+
+.logobox{
+  height:75px;
+  width:75px;
+  background-color: #28703d;
+  float: left;
+}
+
+.leaf{
+  color:#f2f2f2;
+  font-size: 50px;
+  text-align: center;
+  padding: 10px;
+}
+
+nav a{
+  color:black;
+  text-decoration: none;
+  float: right;
+  font-size: 20px;
+  padding:25px 15px;
+  text-align: center;
+}
+
+a:hover{
+  color: #28703d;
+}
+
+#Hmenu{
+  float: right;
+  display: none;
+  padding-top: 15px;
+}
+@media (max-width:700px){
+  #Hmenu{
+    display: block;
+  }
+  nav a{
+    display: none;
+  }
+
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #f2f2f2;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #21822d;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/*HERO SECTION*/
+
+#title{
+  font-size: 60px;
+  text-align: left;
+  text-align: center;
+}
+
+
+.siteHead{
+  padding-top: 20vh;
+}
+.siteHead p{
+  font-size: 25px;
+  width:90%;
+  text-align: center;
+}
+
+@media(max-width:700px){
+  #title{
+    font-size: 35px;
+  }
+  .siteHead p{
+    font-size: 20px;
+  }
+}
+.sect{
+  height:60%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.subSection{
+  padding-top: 5%;
+  height:auto;
+  padding: 100px 0px;
+  background-color: #f2f2f2;
+  color:black;
+  overflow: visible;
+}
+
+.pic{
+  height:60vh;
+  padding: 25px;
+  overflow: visible;
+
+}
+
+.pic1{
+  background-image: url('../images/plant1.gif');
+  background-position: 50% 50%;
+  -webkit-background-size:cover;
+     -moz-background-size:cover;
+       -o-background-size:cover;
+          background-size:cover;
+
+}
+.pic2{
+  background-image: url('../images/plant2.gif');
+  background-position: 0% 0%;
+  -webkit-background-size:cover;
+     -moz-background-size:cover;
+       -o-background-size:cover;
+          background-size:cover;
+}
+
+.sectOne{
+  background-image: url('../images/green.gif');
+}
+
+ /*About page*/
+ .box-div{
+   width: 100%;
+   height: auto;
+   /*margin-left: 13%;*/
+   padding-top: 50px;
+   margin-left: 1%;
+   overflow: visible;
+
+ }
+ .card{
+   height: 250px;
+   width: 32%;
+   background: black;
+   display: inline-block;
+   /*float: left;*/
+   margin: 1px;
+   overflow: visible;
+ }
+ .card-1{
+   background-image: url('../images/plant3.gif');
+   background-position: 50% 50%;
+   -webkit-background-size:cover;
+      -moz-background-size:cover;
+        -o-background-size:cover;
+           background-size:cover;
+ }
+ .card-2{
+   background-image: url('../images/purpleflower.gif');
+   background-position: 50% 50%;
+   -webkit-background-size:cover;
+      -moz-background-size:cover;
+        -o-background-size:cover;
+           background-size:cover;
+ }
+ .card-3{
+   background-image: url('../images/stones.gif');
+   background-position: 50% 50%;
+   -webkit-background-size:cover;
+      -moz-background-size:cover;
+        -o-background-size:cover;
+           background-size:cover;
+ }
+
+ @media(max-width:700px){
+   .card{
+     height:150px;
+     width:75%;
+     display: block;
+     margin-left: 13%;
+   }
+ }
+ @media(min-width:700px){
+   .card{
+     height:300px;
+     width:70%;
+   }
+ }
+ /*Contact Form*/
+
+button{
+  margin-top: 50px;
+  margin-left: 40%;
+  color:white;
+  font-size: 15px;
+  border-radius: 10px;
+  border: none;
+  padding: 15px;
+  background: #21822d; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#21822d, black); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#21822d, black); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#21822d, black); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#21822d, black); /* Standard syntax */
+}
+
+
+/*makes input boxes*/
+ .input {
+ 	position: relative;
+ 	z-index: 1;
+ 	display: block;
+  margin: 0 auto;
+ 	max-width: 350px;
+ 	width: calc(100% - 2em);
+ }
+
+/*hides input box outline*/
+ .input__field {
+ 	display: block;
+ 	padding: 0.8em;
+ 	width: 60%;
+ 	border: none;
+ 	border-radius: 0;
+ 	font-weight: bold;
+ }
+
+/*hides ugly blue focus outline*/
+ .input__field:focus {
+ 	outline: none;
+ }
+
+/*font size and spacing*/
+ .input__label {
+ 	float: right;
+ 	padding: 0 1em;
+ 	width: 40%;
+ 	font-weight: bold;
+  font-size: 20px;
+ }
+
+/*hides green lines until clicked*/
+ .input--effect {
+ 	overflow: hidden;
+ }
+
+/*controls the space between the lines and makes white input box transparent*/
+ .input__field--effect {
+ 	margin-top: 1em;
+ 	padding: 2em .85em;
+ 	width: 100%;
+ 	background: transparent;
+ }
+
+/*positions text over animation lines*/
+ .input__label--effect {
+ 	position: absolute;
+ 	bottom: 0;
+ 	left: 0;
+ 	padding: 0 0.25em;
+ 	width: 100%;
+ 	height: calc(100% - .3em);
+ 	/*text-align: left;
+ 	pointer-events: none;*/
+ }
+
+/*part of text animation*/
+ .input__label-content--effect {
+ 	position: absolute;
+ }
+
+/*adds grey underline and green animationline*/
+ .input__label--effect::before,
+ .input__label--effect::after {
+ 	content: '';
+ 	position: absolute;
+ 	top: 0;
+ 	left: 0;
+ 	width: 100%;
+ 	height: calc(100% - 10px);
+ 	border-bottom: 1px solid #B9C1CA;
+  /*controls unclicked line colour*/
+ }
+
+/*green line effect*/
+ .input__label--effect::after {
+ 	margin-top: 2px;
+ 	border-bottom: 4px solid red;
+ 	-webkit-transform: translate3d(-100%, 0, 0);
+ 	transform: translate3d(-100%, 0, 0);
+ 	-webkit-transition: -webkit-transform 0.3s;
+ 	transition: transform 0.3s;
+ }
+
+/*line colour*/
+ .input__label--effect-color-1::after {
+ 	border-color: hsl(156, 100%, 24%);
+ }
+
+/*Greenline animation */
+ .input__field--effect:focus + .input__label--effect::after,
+ .input--filled .input__label--effect::after {
+ 	-webkit-transform: translate3d(0, 0, 0);
+ 	transform: translate3d(0, 0, 0);
+ }
+
+/*animates text onclick*/
+ .input__field--effect:focus + .input__label--effect .input__label-content--effect,
+ .input--filled .input__label-content--effect {
+ 	-webkit-animation: anim-1 0.3s forwards;
+ 	animation: anim-1 0.3s forwards;
+ }
+
+ /*HOVER BOX EFFECT*/
+
+/*Text and inner box visible */
+ .grid figure {
+ 	position: relative;
+ 	float: left;
+ 	overflow: hidden;
+ 	margin: 1px;
+ 	width: 32%;
+ }
+
+/*Postions opaque layer over picture*/
+ .grid figure .card {
+ 	position: relative;
+ 	display: block;
+ 	min-height: 100%;
+ 	max-width: 100%;
+ 	/*opacity: 0.8;*/
+ }
+
+/*Text colour spacing for p and h2*/
+ .grid figure figcaption {
+ 	padding: 2em;
+ 	color: #fff;
+ 	text-transform: uppercase;
+ 	font-size: 1.25em;
+ }
+
+/*Gradient overlay and size of inner box*/
+ .grid figure figcaption,
+ .grid figure figcaption > a {
+ 	position: absolute;
+ 	top: 0;
+ 	left: 0;
+ 	width: 65%;
+  /*This controls this size of the box inside the div*/
+ 	height: 185px;
+ }
+
+/*Positions h2 and p text in hover box*/
+ .grid figure h2,
+ .grid figure p {
+ 	margin: 0;
+ }
+
+/*Size of p text*/
+ .grid figure p {
+ 	font-size: 68.5%;
+ }
+
+/*Linear gradient overlay color*/
+ figure.effect {
+ 	background: -webkit-linear-gradient(45deg, #ff89e9 0%, #05abe0 100%);
+ 	background: linear-gradient(45deg, #ff89e9 0%,#05abe0 100%);
+ }
+
+/*Positions picture and background for hover effect*/
+ figure.effect .card {
+ 	max-width: none;
+ 	width: -webkit-calc(100% + 60px);
+ 	width: calc(100% + 60px);
+ 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+ 	transition: opacity 0.35s, transform 0.35s;
+ 	-webkit-transform: translate3d(-50px,0,0);
+ 	transform: translate3d(-50px,0,0);
+ }
+
+/*Box that show up when hovering*/
+ figure.effect figcaption::before {
+ 	position: absolute;
+ 	top: 30px;
+ 	right: 40px;
+ 	bottom: 40px;
+ 	left: 30px;
+ 	border: 1px solid #fff;
+ 	content: '';
+ 	opacity: 0;
+  /*Controls speed of hover effect*/
+ 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+ 	transition: opacity 0.35s, transform 0.35s;
+ 	-webkit-transform: translate3d(-20px,0,0);
+ 	transform: translate3d(-20px,0,0);
+ }
+
+/*spacing inside inner box*/
+ figure.effect figcaption {
+ 	padding: 3.5em;
+ }
+
+/*hides and positions p text for hover effect*/
+ figure.effect p {
+ 	opacity: 0;
+ 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+ 	transition: opacity 0.35s, transform 0.35s;
+ 	-webkit-transform: translate3d(-10px,0,0);
+ 	transform: translate3d(-10px,0,0);
+ }
+
+/*Makes gradient overlay appear on hover*/
+ figure.effect:hover .card {
+ 	opacity: 0.7;
+ }
+/*Makes inne box appear on hover moves box slighly*/
+ figure.effect:hover figcaption::before,
+ figure.effect:hover p {
+ 	opacity: 1;
+ 	-webkit-transform: translate3d(0,0,0);
+ 	transform: translate3d(0,0,0);
+ }
+
+/*FOOTER*/
+ footer{
+   height:150px;
+   background-color: #f2f2f2;
+   overflow: visible;
+   /*position: absolute;*/
+   width: 100%;
+
+ }
+ footer a{
+   color: black;
+   float: right;
+   padding: 10px;
+   margin-top: 20px;
+   font-size: 30px;
+ }
+ a:hover{
+   color:  #21822d;
+ }
+
+
+.footerBox a{
+  font-size: 15px;
+  float: left;
+  text-decoration: none;
+}
+.footerBox li{
+  display: block;
+}
+
+/*Respnsive*/
+@media(min-width:1400px){
+  .grid figure {
+   width: 32%;
+  }
+  .grid figure figcaption,
+  .grid figure figcaption > a {
+
+   width: 75%;
+   min-height: 185px;
+  }
+}
+
+@media(max-width:1400px){
+  .grid figure {
+   width: 32%;
+  }
+  .grid figure figcaption,
+  .grid figure figcaption > a {
+
+   width: 65%;
+   /*min-height: 185px;*/
+  }
+}
+
+@media(max-width:1100px){
+  .grid figure {
+   width: 32%;
+  }
+  .grid figure figcaption,
+  .grid figure figcaption > a {
+
+   width: 70%;
+   /*min-height: 185px;*/
+  }
+  figure.effect figcaption::before {
+   width: 75%;
+   top: 30px;
+   right: 30px;
+   bottom: 30px;
+   left: 30px;
+  }
+}
+
+ @media(max-width:800px){
+   .grid figure {
+   	width: 48%;
+    height:200px;
+   }
+   .grid figure figcaption,
+   .grid figure figcaption > a {
+   	width: 60%;
+   	/*min-height: 185px;*/
+    height: 75px;
+   }
+   figure.effect figcaption::before {
+    width: 70%;
+    top: 30px;
+    right: 30px;
+    bottom: -50px;
+    left: 30px;
+   }
+
+   figure.effect figcaption::before {
+    width: 80%;
+    top: 30px;
+    right: 30px;
+    bottom: 40px;
+    left: 30px;
+   }
+
+ }
+ @media(max-width:650px){
+   .grid figure {
+   	width: 98%;
+    height:200px;
+   }
+
+   .grid figure figcaption,
+   .grid figure figcaption > a {
+     width: 65%;
+     height: 70px;
+     margin: 0px 20px;
+   }
+   .card{
+     margin-left: 0%;
+   }
+   figure.effect h2 {
+   	padding: 10% 0 10px 0;
+   }
+   figure.effect figcaption::before {
+    width: 85%;
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
+    left: 30px;
+   }
+
+ }

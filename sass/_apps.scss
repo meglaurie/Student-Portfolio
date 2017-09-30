@@ -1,0 +1,110 @@
+.container{
+  // height:500px;
+  padding-top: 100px;
+  background: $background;
+  overflow: auto;
+  padding-bottom: 100px;
+  margin-left: -7%;
+
+// This .box class is also used in the Graphic design //section.
+
+    .appbox{
+      height:300px;
+      width:31%;
+      margin: 1px;
+      float: right;
+
+      // transition: 0.4s;
+      font-family: $font2;
+      color: white;
+      font-size: 20px;
+      text-align: center;
+
+      }
+
+      @media(max-width:700px){
+        .appbox{
+          display: block;
+          width: 100%;
+        }
+      }
+
+    .box-icon-container{
+        background: #0f0e0e;
+        width: 100%;
+        height: 300px;
+        color: white;
+        padding: 10px;
+        opacity: 0;
+        transition: 0.4s;
+        padding-top: 20px;
+        // transform: translateX(0px);
+        h3{
+          padding: 5px;
+        }
+        a{
+          padding-bottom: 15px;
+          text-align: center;
+        }
+      }
+
+      .appbox:hover .box-icon-container{
+        // transform: translateX(0px);
+        opacity: 0.8;
+      }
+
+
+
+
+
+
+.jsWeather {
+  background-color: grey;
+  background-image: url('../images/weatherSS.gif');
+  background-position: 50% 50%;
+  -webkit-background-size:cover;
+     -moz-background-size:cover;
+       -o-background-size:cover;
+          background-size:cover;
+}
+
+
+.RPSD {
+
+  background-image: url('../images/RPSDSS.gif');
+  background-position: 50% 50%;
+  -webkit-background-size:cover;
+     -moz-background-size:cover;
+       -o-background-size:cover;
+          background-size:cover;
+}
+
+.PSapp {
+
+  background-image: url('../images/BlueRedHero.gif');
+  background-position: 0% 0%;
+  -webkit-background-size:cover;
+     -moz-background-size:cover;
+       -o-background-size:cover;
+          background-size:cover;
+}
+
+.LibApp {
+
+  background-image: url('../images/LibraryJSSS.gif');
+  background-position: 0% 0%;
+  -webkit-background-size:cover;
+     -moz-background-size:cover;
+       -o-background-size:cover;
+          background-size:cover;
+}
+.CCapp{
+  background-image: url('../images/BlueRedHero.gif');
+  background-position: 0% 0%;
+  -webkit-background-size:cover;
+     -moz-background-size:cover;
+       -o-background-size:cover;
+          background-size:cover;
+
+}
+}

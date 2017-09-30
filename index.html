@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta name="description" content="Web development portfolio constructed using HTML5, CSS3, JavaScript, JQuery, and PHP.">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript,PHP">
+  <meta name="author" content="Megan Laurie">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Megan Laurie | Web Developer</title>
+  <!-- <link rel="stylesheet" href="https://rawgit.com/dodgeblaster/basecss/master/base.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Megrim" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="icon" type="image/svg" href="images/favicon.svg">
+  <script src = "js/menu.js"></script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-96078574-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body>
+
+    <!--Fixed Hero Background  -->
+    <div class="hero">
+
+    </div>
+
+    <!-- Desktop Menu -->
+    <div class="heroTxt">
+
+      <!-- Mobile Nav Menu -->
+      <div id="mobileMenu">
+        <h2 class="mobile-menu" onclick="toggleNav('link1')"><a href="index.html#projects">Projects</a></h2>
+        <ul>
+          <li><a href="webSites.html">Websites</a></li>
+          <li><a href="graphicDesign.html">Graphic Design</a></li>
+          <li><a href="apps.html">Apps</a></li>
+          <li><a href="photography.html">Photos</a></li>
+          <li><a href="http://130.211.202.23">Blog</a></li>
+          <li><a href="art.html">Art/Illustraions</a></li>
+        </ul>
+        <h2><a onclick="toggleNav('link2')" href="index.html#skills">Skills</a></h2>
+        <h2><a onclick="toggleNav('link3')" href="index.html#about">About</a></h2>
+        <h2><a onclick="toggleNav('link4')" href="contact.html">Contact</a></h2>
+      </div>
+
+      <nav>
+        <div class="wrapper navBar">
+          <ul>
+            <div class="dropdown">
+              <a onclick="myFunction()" class="dropbtn">Projects</a>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="webSites.html">Websites</a>
+                <a href="graphicDesign.html">Graphic Design</a>
+                <a href="apps.html">Apps</a>
+                <a href="photography.html">Photography</a>
+                <a href="http://130.211.202.23">Blog</a>
+                <a href="art.html">Art/Illustration</a>
+              </div>
+            </div>
+
+            <!-- <li><a href="#projects">Projects</a></li> -->
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+            <!--Hamburger Menu  -->
+            <div id="nav-icon2" onclick="toggleNav('div')" >
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </ul>
+
+          <!-- LOGO -->
+          <div id="logo-box"></div>
+
+
+        </div>
+      </nav>
+
+      <!--Hero Writing -->
+      <header>
+        <div class="wrapper">
+          <div class="name-logo">
+            <h1 id="title">Megan Laurie</h1>
+
+            <div class="rw-wrapper">
+            <p class="rw-sentence">
+            <div class="rw-words rw-words-1">
+                <span>| Web Development |</span>
+                <span>| Web Design |</span>
+                <span>| UI/UX |</span>
+                <span>| Graphic Design |</span>
+                <span>| Photography |</span>
+                <span>| Illustration |</span>
+              </div>
+            </p>
+           </div>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <!-- Projects Section -->
+      <div class="Contentcontainer" id="projects">
+
+      <h1 class ="projectsh1">Projects</h1>
+      <hr class ="projectsh1">
+
+      <section  id="projectbox">
+
+        <!-- <h1 class ="projectsh1">Projects</h1>
+        <hr class ="projectsh1"> -->
+
+
+        <div class="row small-up-1 medium-up-1 large-up-3">
+          <div class="cardContainer">
+
+            <a href="webSites.html" title="page that has links to practice websites and class projects">
+            <div class="column card websites grid">
+    					<figure class="effect-romeo card-icon-container">
+    						<figcaption>
+                  <h3>Websites</h3>
+                  <p>Personal and class websites.</p>
+    						</figcaption>
+    					</figure>
+            </div>
+          </a>
+
+            <a href="graphicDesign.html" title="page containing examples of graphic design work">
+            <div class="column card GDBox grid">
+    					<figure class="effect-romeo card-icon-container">
+    						<figcaption>
+                  <h3>Graphic Design</h3>
+                  <p>Work made using Photoshop and Illustrator.</p>
+    						</figcaption>
+    					</figure>
+            </div>
+          </a>
+
+            <a href="apps.html" title="page contains links to web application projects">
+            <div class="column card JSWBox grid">
+    					<figure class="effect-romeo card-icon-container">
+    						<figcaption>
+                  <h3>JavaScript Apps</h3>
+                  <p>Useful applications developed using JavaScript.</p>
+    						</figcaption>
+    					</figure>
+            </div>
+          </a>
+
+            <a href="photography.html" title="page contains collection of personal photos">
+            <div class="column card photoBox grid">
+              <figure class="effect-romeo card-icon-container">
+                <figcaption>
+                  <h3>Photography</h3>
+                  <p>Photos taken using a DSLR and edited using photoshop.</p>
+                </figcaption>
+              </figure>
+            </div>
+          </a>
+
+            <a href="http://130.211.202.23" title="personal wordpress blog about learning code">
+            <div class="column card GHBox grid">
+              <figure class="effect-romeo card-icon-container">
+                <figcaption>
+                  <h3>Blog</h3>
+                  <p>Personal and class journals about learning to code.</p>
+                </figcaption>
+              </figure>
+            </div>
+          </a>
+
+
+            <a href="art.html">
+            <div class="column card BBBox grid">
+              <figure class="effect-romeo card-icon-container">
+                <figcaption>
+                  <h3>Art/Illustration</h3>
+                  <p>A Collection of personal art work in various mediums.</p>
+                </figcaption>
+              </figure>
+            </div>
+          </a>
+
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+  <div class="emptydiv">
+
+  </div>
+
+  <!--Skills section  -->
+  <div class="Contentcontainer">
+    <section class="main-section" id="skills">
+      <div class="wrapper">
+        <h1>Skills</h1>
+        <hr>
+        <p>| HTML5/CSS3 | SASS | GIT | Photoshop | Illustrator | JavaScript | JQuery | PHP | WordPress | Social Media |
+          Foundation | Photography | Illustration |</p>
+        </div>
+      </section>
+    </div>
+
+  <div class="emptydiv">
+
+  </div>
+
+  <!--About section  -->
+  <div class="Contentcontainer">
+    <section class="main-section" id="about">
+      <div class="wrapper">
+        <h1>About</h1>
+        <hr>
+        <p>I live in Calgary, Alberta. I am currently a Web Development Certificate student at SAIT. I have a Bachelor of Arts from Mount Royal University.
+          I regularly attend Meetups such as Pixels and Pints. I enjoy photography, design, travel, reading, and learning new coding languages.</p>
+        </div>
+      </section>
+    </div>
+
+  <div class="emptydiv">
+
+  </div>
+
+  <!--Contact Info and Links  -->
+  <div class="Contentcontainer">
+    <section class="main-section" id="contact">
+      <div class="wrapper">
+        <a href="contact.html"><div class="circlePic"></div></a>
+        <h1>Contact</h1>
+        <hr>
+        <div class="contact-soc-media">
+          <ul class="soc-media">
+            <li><a href="mailto:megan@meganlaurie.ca" target = "_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+            <li><a href="https://github.com/meglaurie" target = "_blank" ><i class="fa fa-github" aria-hidden="true"></i></a></li>
+            <li><a href="https://bitbucket.org/meglaurie" target="_blank"><i class="fa fa-bitbucket" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/megan-laurie-4416b9136" target = "_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            <li><a href="https://twitter.com/Mlaurie_" target = "_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+        <a href="#" class="back-to-top" id="Top"><i class="fa fa-angle-double-up" aria-hidden="true"></i></a>
+      </div>
+    </section>
+  </div>
+
+
+
+  </body>
+</html>

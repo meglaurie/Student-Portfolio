@@ -1,0 +1,164 @@
+
+<html>
+
+<head>
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+      var outputInfo = "";
+        function init() {
+            document.getElementById("output").value = "Check out book info goes here";
+        }
+        //Onclick function
+        function userOutput(){ 
+          validate();
+          // allClear();
+        }
+
+        function validate() {
+            //Regex
+              var dFormat = /\d\d-\d\d-\d\d\d\d/;
+              var nFormat = /^[a-zA-Z ]{2,70}$/;
+
+
+              // Regex validation
+                  if(!nFormat.test(document.getElementById('txtTitle').value)){
+                      alert("Please ensure your Title has a valid format");
+                      document.forms[0].elements[0].focus();
+                      return false;
+
+                  }
+                  if(!nFormat.test(document.getElementById('txtAuthor').value)){
+                      alert("please ensure your Author has a valid format");
+                      document.forms[0].elements[1].focus();
+                      return false;
+                  }
+                  if(!dFormat.test(document.getElementById('txtDate').value)){
+                      alert("Please ensure your return date has a valid format");
+                      document.forms[0].elements[2].focus();
+                      return false;
+                  }
+
+
+              if(document.forms[0].elements[0].value==""){
+                alert("please enter a title");
+                //put the focus (highlight) on select box
+                document.forms[0].elements[0].focus();
+                return false; //stop the submit of the form
+              }
+              // validate text (2nd element in the form - index of one)
+              if(document.forms[0].elements[1].value==""){
+                alert("please enter an author");
+                document.forms[0].elements[1].focus();
+                return false;
+              }
+              // validate text (3rd element in the form - index of two)
+              if (document.forms[0].elements[2].value=="") {
+                alert("please enter a return date");
+                document.forms[0].elements[2].focus();
+                return false;
+              }
+              if(!getCheckedValue("btnArray")){   // the '!' (bang) says 'make true = false'
+                  // if that validation fails...
+                  document.getElementById("btnFiction").focus();
+                  alert("please select a Book Type");
+                  //return false;  // stop the submit of the form
+                  return false;
+              }
+
+            txtOutput();
+            allClear();
+
+        }
+
+        function getCheckedValue(elementName){
+
+            // created a variable to hold true or false if some has been selected
+            var selected = false;
+
+            // create another variable to hold the radio/check button array
+            var btn = document.getElementsByName(elementName);
+
+            // loop through our array and see if any are selected
+            for(index=0;index<btn.length;index++){
+
+                if(btn[index].checked){
+                    // selected will only get set to true when
+                    // one of the button in the array has been selected.
+                    selected = true;
+                }
+            }
+            // return 'selected' variable
+            return selected;
+        }
+
+
+
+        function txtOutput(){
+          outputInfo += "Author: " + document.getElementById('txtTitle').value + " Title: " + document.getElementById('txtAuthor').value + " Return Date: " + document.getElementById('txtDate').value + " Book Type: " +
+          document.querySelector('input[name = "btnArray"]:checked').value;
+
+          //taking Output and setting into the html table
+          document.getElementById("output").value = outputInfo;
+        }
+
+        function allClear(){
+        // reset the input fields on the form
+        document.getElementById("txtTitle").value = " ";
+        document.getElementById("txtAuthor").value = " ";
+        document.getElementById("txtDate").value = " ";
+
+        $('input[name = "btnArray"]:checked').attr('checked', false);
+
+        }
+    </script>
+</head>
+
+<body onload="init();">
+  <div class="content">
+    <h2>Library Check Out</h2>
+    <form name="libraryForm">
+        <table>
+            <tr>
+                <td>Book Title:</td>
+                <td>
+                    <input name="txtTitle" id="txtTitle" name="txtTitle" />
+                </td>
+            </tr>
+            <tr>
+                <td>Author:</td>
+                <td>
+                    <input name="txtAuthor" id="txtAuthor" name="txtAuthor" />
+                </td>
+            </tr>
+            <tr>
+                <td>Return Date:</td>
+                <td>
+                    <input name="txtDate" id="txtDate" name="txtDate" />
+                </td>
+            </tr>
+            <tr>
+                <td>Book Type</td>
+                <td>
+                    <input type="radio" name="btnArray" id="btnFiction" class="bookType" value="Fiction" />
+                    <label for="btnFiction">Fiction</label>
+                    <input type="radio" name="btnArray" id="btnNonFiction" class="bookType" value="Non-Fiction" />
+                    <label for="btnNonFiction">Non-Fiction</label>
+                    <input type="radio" name="btnArray" id="btnPeriodical" class="bookType" value="Periodical" />
+                    <label for="btnPeriodical">Periodical</label>
+                </td>
+            </tr>
+        </table>
+        <br/>
+        <br/>
+    </form>
+
+    <textarea name="txtOutput" id="output" rows="10" columns="200"></textarea>
+    <br>
+    <button id="userOut" onclick="userOutput()">Check Out</button>
+
+    </div>
+</body>
+
+</html>

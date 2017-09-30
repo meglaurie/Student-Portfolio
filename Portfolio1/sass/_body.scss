@@ -1,0 +1,54 @@
+.main-section{
+
+}
+
+#projects{
+  height: $section-height;
+  background: grey;
+
+
+  h1{
+    font-family: $font1;
+    margin: 0 25%;
+    padding-top: 150px;
+  }
+  p{
+    font-family: $font2;
+  }
+}
+
+#projects-list{
+  height: $section-height;
+  background: black;
+
+  background-image: linear-gradient(180deg, rgba(82,33,122,0.5), rgba(82,33,122,0.5) ), url('../images/feature1.jpg');
+  background-position: 50% 50%;
+  -webkit-background-size:cover;
+     -moz-background-size:cover;
+       -o-background-size:cover;
+          background-size:cover;
+}
+
+#skills{
+  height: $section-height;
+  background: grey;
+
+  h1{
+    font-family: $font1;
+    margin: 0 25%;
+    padding-top: 150px;
+  }
+  p{
+    font-family: $font2;
+  }
+}
+
+#contact{
+  height: $section-height;
+  background: #582e7a;
+  padding: 100px;
+  text-align: center;
+  p{
+    text-align: center;
+  }
+}

@@ -1,0 +1,364 @@
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ BASE STYLES
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+*{
+  box-sizing: border-box;
+}
+
+.wrapper{
+  width:80%;
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+h1{
+  font-family: sans-serif;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ Nav
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+nav {
+  height: 44px;
+  width: 100%;
+  background: #292a2b;
+  text-align: center;
+}
+
+.nav-bar{
+  display: inline-block;
+  width: 100%;
+}
+
+.nav-bar ul {
+  margin: 0px;
+  text-align: center;
+}
+
+.nav-bar li {
+  display: inline-block;
+  list-style: none;
+}
+
+.nav-bar a{
+  color:#FFF;
+  padding:10px 30px;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: lighter;
+  font-family: 'Arsenal', sans-serif;
+  display: block;
+}
+
+.nav-bar i {
+  font-size: 1.2em;
+  line-height: 20px;
+}
+
+.mobile-nav-bar{
+  display: inline-block;
+  width: 100%;
+}
+
+.mobile-nav-bar ul {
+  margin: 0px;
+  text-align: center;
+  padding-left: 0;
+}
+
+.mobile-nav-bar li {
+  display: inline-block;
+  list-style: none;
+}
+
+.mobile-nav-bar a{
+  color:#FFF;
+  padding:10px 30px;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: lighter;
+  font-family: 'Arsenal', sans-serif;
+  display: block;
+}
+
+.mobile-nav-bar i {
+  font-size: 1.2em;
+  line-height: 20px;
+}
+
+.mobile-apple-logo{
+  text-align: center;
+}
+
+.mobile-hamburger{
+  float: left;
+}
+
+.tablet-nav-bar{
+  display: inline-block;
+  width: 100%;
+}
+
+.tablet-nav-bar ul {
+  margin: 0px;
+  text-align: center;
+}
+
+.tablet-nav-bar li {
+  display: inline-block;
+  list-style: none;
+}
+
+.tablet-nav-bar a{
+  color:#FFF;
+  padding:10px 30px;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: lighter;
+  font-family: 'Arsenal', sans-serif;
+  display: block;
+}
+
+.tablet-nav-bar i {
+  font-size: 1.2em;
+  line-height: 20px;
+}
+
+nav a:hover{
+  color: #dee0e2;
+}
+
+.mobile-nav-bar{
+  display: none;
+}
+.tablet-nav-bar{
+  display:none;
+}
+
+@media (max-width: 1240px){
+  .nav-bar{
+    display: none;
+  }
+  .mobile-nav-bar{
+    display:none;
+  }
+  .tablet-nav-bar{
+    display: inline-block;
+  }
+}
+
+@media (max-width:700px ){
+  .nav-bar{
+    display: none;
+  }
+  .tablet-nav-bar{
+    display: none;
+  }
+  .mobile-nav-bar{
+    display: inline-block;
+  }
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ Hero
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.hero {
+  height: 80vh;
+  width: 100%;
+  margin: 0px;
+  background-image:url("../img/hero.jpg");
+  background-position: 25% 25%;
+  -webkit-background-size:cover;
+     -moz-background-size:cover;
+       -o-background-size:cover;
+          background-size:cover;
+
+}
+
+.hero h1{
+  margin: 0px;
+  padding-top: 100px;
+  font-family: 'Arsenal', sans-serif;
+  color:#5e5f60;
+  text-align: left;
+}
+
+.hero h2{
+  margin: 0px;
+  font-family: 'Arsenal', sans-serif;
+  color:#5e5f60;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ Main
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+main {
+  width: 100%;
+  overflow: auto;
+  background:#FFFFFF;
+  margin: 1px;
+}
+
+.main-1, .main-2, .main-3, .main-4{
+  height: 30vh;
+  width:24.8%;
+  background: #222;
+  position: relative;
+  margin:1px;
+  float: left;
+}
+
+.main-1{
+
+  background: url("../img/accessories.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  -webkit-background-size:cover;
+     -moz-background-size:cover;
+       -o-background-size:cover;
+          background-size:cover;
+}
+
+.main-2{
+
+  background: url("../img/ipad.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  -webkit-background-size:cover;
+     -moz-background-size:cover;
+       -o-background-size:cover;
+          background-size:cover;
+}
+
+.main-3{
+
+  background: url("../img/airpods.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  -webkit-background-size:cover;
+     -moz-background-size:cover;
+       -o-background-size:cover;
+          background-size:cover;
+}
+
+.main-4{
+
+  background: url("../img/apple-tv.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  -webkit-background-size:cover;
+     -moz-background-size:cover;
+       -o-background-size:cover;
+          background-size:cover;
+}
+
+@media (max-width:1000px){
+  .main-1, .main-2, .main-3, .main-4{
+    width:49%;
+    display: inline;
+  }
+}
+
+@media (max-width: 700px){
+  .main-1, .main-2, .main-3, .main-4{
+    width:100%;
+    display: block;
+  }
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ Footer
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+footer {
+  width: 100%;
+  background:#f2f2f2;
+  color:white;
+  text-align: center;
+}
+
+.footer-section{
+  float: left;
+}
+
+.footer-lists{
+  padding: 0 30px;
+  display: inline-block;
+}
+
+.footer-lists ul{
+  margin: 0px 40px;
+  padding: 10px;
+  display: inline-block;
+}
+
+.footer-lists li {
+  text-decoration: none;
+  list-style: none;
+  padding: 5px;
+  margin: 0px;
+  font-size: 12px;
+  text-align: left;
+}
+
+.footer-lists a {
+  color: #656668;
+  padding: 10px;
+  text-decoration: none;
+  margin: -10px;
+}
+
+.footer-title {
+    margin: 0px;
+    padding: 5px;
+    color:#656668;
+    font-weight: bold;
+}
+
+
+
+@media(max-width: 800px){
+  .footer-section{
+    display: none;
+  }
+}
+
+
+/******************************************************************************
+social media icons
+*******************************************************************************/
+ hr{
+  color:grey;
+  margin: 0;
+}
+
+.soc-media ul{
+  list-style: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.soc-media li{
+  display: inline-block;
+  padding: 10px;
+  margin: 0;
+  color:#5e6063;
+}
+
+.soc-media a{
+  text-decoration: none;
+  color:#5e6063;
+}
+
+footer a:hover{
+  color:#000;
+}

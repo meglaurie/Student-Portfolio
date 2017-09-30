@@ -1,0 +1,20 @@
+body{
+  background: grey;
+
+  background-image: url('../images/hero.gif');
+  background-position: 0% 0%;
+  -webkit-background-size:cover;
+     -moz-background-size:cover;
+       -o-background-size:cover;
+          background-size:cover;
+}
+
+.content-box{
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 20%;
+  margin-left: 30%;
+  margin-right: 30%;
+  padding:20px;
+  background: white;
+}

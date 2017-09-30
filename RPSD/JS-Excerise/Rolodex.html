@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <!-- <script type="text/javascript" src="Rolodex.js"></script>
+    <link rel="stylesheet" href="styles.css"> -->
+    <style media="screen">
+      table, th, td{
+        border: 3px solid black;
+      }
+      form{
+        margin-top: 200px;
+        margin-left: 40%;
+        width: 300px;
+        text-align: center;
+        border: 3px solid black;
+        border-radius: 20px;
+        padding: 10px;
+        background-color: white;
+      }
+      body{
+      background-color: #5fd0d8;
+      }
+      table{
+      margin-left: 37%;
+      background-color: white;
+      }
+
+    </style>
+    <script>
+    var output = "<tr><th>Name</th><th>Email</th><th>Phone</th><th>Province</th></tr>";
+
+    function userSubmit(){
+      validateForm();
+      allClear();
+    }
+
+    function loadProvinces(){
+    var provArray = ["BC", "AB", "SK", "MB","ON", "QC", "NL", "NS", "NB", "PEI"];
+
+    var provinceOutput =  "<option value=''>-Select-</option>"
+    //for loop to output provinces
+    for( var pIndex=0; pIndex<provArray.length; pIndex++){
+      provinceOutput += "<option name= 'prov" + pIndex + "' value='" + provArray[pIndex] + "'>" + provArray[pIndex]+ "</option>";
+    }
+    document.getElementById('cboProv').innerHTML = provinceOutput;
+    }
+
+
+    function validateForm(){
+      var eFormat = /(\w+\.)*\w+@([a-zA-Z]+\.)+[a-zA-Z]{2,6}/;
+      var pFormat = /\d\d\d-\d\d\d-\d\d\d\d/;
+      var nFormat = /^[a-zA-Z ]{7,30}$/;
+      // var errorMsg = "";
+      if(document.forms[0].elements[0].selectedIndex==0){
+        alert("please select a province");
+        //put the focus (highlight) on select box
+        document.forms[0].elements[0].focus();
+        return false; //stop the submit of the form
+      }
+      // validate text (2nd element in the form - index of one)
+      if(document.forms[0].elements[1].value==""){
+        alert("please enter a name");
+        document.forms[0].elements[1].focus();
+        return false;
+      }
+      // validate text (3rd element in the form - index of two)
+      if (document.forms[0].elements[2].value=="") {
+        alert("please enter an email");
+        document.forms[0].elements[2].focus();
+        return false;
+      }
+      if (document.forms[0].elements[3].value=="") {
+        alert("please enter a phone number");
+        document.forms[0].elements[3].focus();
+        return false;
+      }
+
+      // Regex validation
+
+          // so far we've passed validation.  Let's do our regex checks
+          if(!nFormat.test(document.getElementById('txtName').value)){
+              alert("Please ensure your Name has a valid format");
+              document.forms[0].elements[1].focus();
+              return false;
+
+          }
+          if(!eFormat.test(document.getElementById('txtEmail').value)){
+              alert("please ensure your email has a valid format");
+              document.forms[0].elements[2].focus();
+              return false;
+          }
+          if(!pFormat.test(document.getElementById('txtPhone').value)){
+              alert("Please ensure your phone number has a valid format");
+              document.forms[0].elements[2].focus();
+              return false;
+          }
+
+          outPut();
+      }
+
+      function outPut(){
+        output += "<tr><td>"+ document.getElementById('txtName').value +"</td><td>" + document.getElementById('txtEmail').value + "</td><td>" +document.getElementById('txtPhone').value + "</td><td>"+ document.getElementById('cboProv').value + "</td></tr>"
+
+        document.getElementById('table1').innerHTML = output;
+      }
+
+      function allClear(){
+            document.getElementById('cboProv').value = "";
+        		document.getElementById('txtName').value = "";
+            document.getElementById('txtEmail').value = "";
+            document.getElementById('txtPhone').value = "";
+      }
+
+    </script>
+  </head>
+  <body>
+    <html>
+        <body onload="loadProvinces();">
+
+          <form name="myForm" action="index.html" method="post">
+            <h1>Rolodex</h1>
+            <br/>
+            <select name="cboProv" id="cboProv"></select>
+            <br/>
+            <br/>
+            <label for="txtName">Name</label>
+            <input type="text" name="txtName" id="txtName" ><br/>
+            <br/>
+            <label for="txtEmail">Email</label>
+            <input type="text" name="txtEmail" id="txtEmail" ><br/>
+            <br/>
+            <label for="txtPhone">Phone</label>
+            <input type="text" name="txtPhone" id="txtPhone" ><br/>
+            <br/>
+            <input id="btn1" type="button" name="Submit" value="Submit" onclick="userSubmit();">
+            <br/>
+          </form>
+          <br><br>
+          <table id ="table1" style="border: 1px solid black;"></table>
+        </body>
+
+  </body>
+</html>

@@ -1,0 +1,165 @@
+#website{
+  background: white;
+}
+
+.fiftyBox{
+  padding-top: 35px;
+  height: auto;
+  p{
+    padding: 0;
+    font-weight: lighter;
+  }
+
+}
+
+
+.fiftyBox{
+  a:hover{
+    box-shadow: 5px 5px 2px #888888;
+  }
+}
+
+
+.WScard{
+  background: white;
+  height: 300px;
+  width: 45%;
+  padding: 0;
+  margin: 1px;
+  padding-top:0px;
+  font-family: 'Josefin Sans', sans-serif;
+  overflow:hidden;
+  // margin: 20px;
+  // box-shadow: 5px 5px 5px #888888;
+
+  @media(max-width:700px){
+    width: 100%;
+  }
+}
+
+.WScard:hover
+{
+        -webkit-transform: scale(1.01);
+        -ms-transform: scale(1.01);
+        transform: scale(1.01);
+        box-shadow: 5px 10px 10px grey;
+}
+
+
+.floatLeftTxt{
+ float: left;
+ text-align: left;
+ width:45%;
+ @media(max-width:700px){
+   width: 100%;
+   text-align: center;
+ }
+}
+
+.floatRightTxt{
+  float:right;
+  text-align: right;
+  width:45%;
+  @media(max-width:700px){
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.Wp1-card{
+  float: left;
+  background-image: url('../images/blogSS.gif');
+  background-position: 50% 50%;
+  -webkit-background-size:cover;
+     -moz-background-size:cover;
+       -o-background-size:cover;
+          background-size:cover;
+
+}
+
+.Peek-card{
+  float: right;
+  background-image: url('../images/PeekSS.gif');
+  background-position: 50% 50%;
+  -webkit-background-size:cover;
+     -moz-background-size:cover;
+       -o-background-size:cover;
+          background-size:cover;
+
+}
+
+.FB-card{
+  float:left;
+  background-image: url('../images/CitythemeSS.gif');
+  background-position: 50% 50%;
+  -webkit-background-size:cover;
+     -moz-background-size:cover;
+       -o-background-size:cover;
+          background-size:cover;
+
+}
+
+.A4-card {
+  float: left;
+  background-image: url('../images/A4ScreenShot.gif');
+  background-position: 50% 50%;
+  -webkit-background-size:cover;
+     -moz-background-size:cover;
+       -o-background-size:cover;
+          background-size:cover;
+}
+
+.A2-card {
+  float: right;
+  background-image: url('../images/A2ScreenShot.gif');
+  background-position: 50% 50%;
+  -webkit-background-size:cover;
+     -moz-background-size:cover;
+       -o-background-size:cover;
+          background-size:cover;
+
+}
+
+.P1-card{
+  float:left;
+  background-image: url('../images/portfolio1SS.gif');
+  background-position: 50% 50%;
+  -webkit-background-size:cover;
+     -moz-background-size:cover;
+       -o-background-size:cover;
+          background-size:cover;
+
+}
+
+.SP-card{
+  float:right;
+  background-image: url('../images/CyanSS.gif');
+  background-position: 0% 0%;
+  -webkit-background-size:cover;
+     -moz-background-size:cover;
+       -o-background-size:cover;
+          background-size:cover;
+
+}
+.beats-card{
+  float:right;
+  background-image: url('../images/beatsSS.gif');
+  background-position: 0% 50%;
+  -webkit-background-size:cover;
+     -moz-background-size:cover;
+       -o-background-size:cover;
+          background-size:cover;
+
+}
+
+.SingleSite-card{
+  float:right;
+  background: grey;
+  background-image: url('../images/NYSS.gif');
+  background-position: 50% 50%;
+  -webkit-background-size:cover;
+     -moz-background-size:cover;
+       -o-background-size:cover;
+          background-size:cover;
+
+}

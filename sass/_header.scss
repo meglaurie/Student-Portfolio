@@ -1,0 +1,26 @@
+header{
+  text-align: left;
+
+  .secondheader{
+    background:white;
+  }
+
+  .name-logo h1{
+    color: $navHeaderColor;
+    margin-top: 30vh;
+    text-align: left;
+  }
+  p{
+  ;
+    font-size: 25px;
+  }
+
+}
+@media (max-width:900px){
+    .name-logo h1{
+      font-size: 75px;
+    }
+    header p{
+      font-size: 17px;
+    }
+}

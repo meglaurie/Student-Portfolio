@@ -1,0 +1,456 @@
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ BASE STYLES
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+*{
+  box-sizing: border-box;
+}
+
+.wrapper{
+  width:80%;
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+h1{
+  font-family: sans-serif;
+  text-align: left;
+  color: white;
+  margin-top: 25vh;
+  margin-left: 5%;
+  font-family: 'Shrikhand', sans-serif;
+  font-size: 75px;
+
+}
+@media(max-width:700px){
+  h1{
+    margin-top: 10vh;
+  }
+}
+.heroTxt{
+  text-align: left;
+}
+
+
+h2{
+  margin-left: 10%;
+  color: white;
+  font-family: 'Karla', sans-serif;
+  font-size: 40px;
+}
+
+.blue-txt{
+  color:cyan;
+}
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ Nav
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+nav, .hero, main, footer{
+  padding:10px 0;
+  margin: 0px;
+}
+
+nav {
+  height: 100px;
+  width: 100%;
+  padding: 0px;
+  color:white;
+}
+
+nav a{
+  float:right;
+  text-decoration: none;
+  padding: 20px;
+  padding-top:0px;
+  font-size: 20px;
+  color:white;
+}
+
+
+body {
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#Hmenu{
+  float:right;
+  display: none;
+}
+@media(max-width:650px){
+  #Hmenu{
+    display: block;
+  }
+  nav a{
+    display: none;
+  }
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ Hero
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.hero {
+  height: 85vh;
+  width: 100%;
+  padding: 0px;
+
+  /*All Images in this file must be optimized*/
+background-image: linear-gradient( 180deg, rgba(0,0,0,0.3), rgba(79,80,81,1) )
+, url('../images/hero1.jpg');
+background-position: 10% 50%;
+-webkit-background-size:cover;
+   -moz-background-size:cover;
+     -o-background-size:cover;
+        background-size:cover;
+}
+
+.logo-box{
+  width:50px;
+  height:50px;
+  background: cyan;
+}
+.peace{
+  font-size: 40px;
+  color: black;
+  padding: 5px;
+}
+
+a:hover{
+  color: cyan;
+}
+ .blue-txt:hover{
+   color: white;
+ }
+
+.hero p{
+  color: white;
+  font-size: 20px;
+}
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ Main
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+body{
+  background:#4f5051;
+}
+main {
+  height: auto;
+  width: 100%;
+  padding: 50px 0px;
+}
+
+.ContentContainer{
+  background: #4f5051;
+  overflow: visible;
+}
+.ContentContainer h2{
+  padding: 20px;
+  margin: 50px;
+}
+p{
+  width:65%;
+  text-align: justify;
+  margin-left:17%;
+  color: white;
+}
+
+.box-div{
+  width: 100%;
+  /*margin-left: 13%;*/
+  padding-top: 50px;
+
+}
+.card{
+  height: 200px;
+  width: 30%;
+  /*background: black;*/
+  background: black;
+  display: inline-block;
+  float: left;
+  margin: 1px;
+  z-index: 1;
+}
+/*h3{
+  margin-top: 0px;
+}*/
+
+.card-icon-container{
+  background: black;
+  width: 30%;
+  height: 200px;
+  color: white;
+  padding-left: 20px;
+  padding-top: 5px;
+  opacity: 0;
+  transition: 0.5s;
+  transform: translateX(-10px);
+}
+
+.card:hover .card-icon-container{
+  transform: translateX(0px);
+  opacity: 0.85;
+}
+
+.icon-container a {
+  font-size: 20px;
+  color: white;
+  display: inline-block;
+  text-align: center;
+  margin-right: 20px;
+  display: block;
+  padding: 7px;
+
+}
+.icon-container h2 {
+  font-size: 20px;
+  color: white;
+  display: inline-block;
+  padding-top:40px;
+  text-align: center;
+
+}
+
+.card-1{
+  background-image: url('../images/office.gif');
+  background-position: 50% 50%;
+  -webkit-background-size:cover;
+     -moz-background-size:cover;
+       -o-background-size:cover;
+          background-size:cover;
+}
+.card-2{
+  background-image: url('../images/office2.gif');
+  background-position: 50% 50%;
+  -webkit-background-size:cover;
+     -moz-background-size:cover;
+       -o-background-size:cover;
+          background-size:cover;
+}
+.card-3{
+  background-image: url('../images/watch.gif');
+  background-position: 50% 50%;
+  -webkit-background-size:cover;
+     -moz-background-size:cover;
+       -o-background-size:cover;
+          background-size:cover;
+}
+
+@media(max-width:700px){
+  .card{
+    height:150px;
+    width:75%;
+    display: block;
+    margin-left: 13%;
+  }
+
+}
+
+@media(max-width:700px){
+  .card-icon-container{
+
+    height: 150px;
+    font-size: 15px;
+  }
+  h3{
+    margin-top: 3px;
+    margin-bottom: 1px;
+  }
+}
+
+.subSection{
+  overflow: auto;
+}
+
+/*CONTACT FORM*/
+button{
+  padding: 10px;
+  font-size: 15px;
+  background:cyan;
+  margin-top: 50px;
+  margin-left: calc(40% - 25px);
+}
+.center{
+  margin: 0 auto;
+}
+.content{
+  margin-left: calc(35% - 100px);
+  margin-right: calc(35% - 100px);
+  margin-top: 12%;
+}
+.input {
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	margin: 1.25em;
+	max-width: 350px;
+	width: calc(100% - 2em);
+	vertical-align: top;
+}
+
+/*Positions label text and sizes input labels*/
+.input__field {
+	position: relative;
+	display: block;
+	padding: 0.8em;
+	width: 60%;
+	border: none;
+	font-weight: 400;
+	-webkit-appearance: none;
+}
+
+/*Removes ugly blue focus feild*/
+.input__field:focus {
+	outline: none;
+}
+
+/*Label Font size*/
+.input__label {
+	width: 40%;
+	font-weight: bold;
+  font-size: 20px;
+}
+
+/*text below label box, when clicked float turns blue*/
+.input__label-content {
+	position: relative;
+	display: block;
+	width: 100%;
+}
+
+/*Input box width*/
+.input__field--effect {
+	width: 100%;
+}
+
+/*Makes black text disappear and reapppear as blue*/
+.input__label--effect {
+	width: 100%;
+	text-align: left;
+	position: absolute;
+	bottom: 100%;
+	pointer-events: none;
+	overflow: hidden;
+	padding: 0 1.25em;
+	-webkit-transform: translate3d(0, 3em, 0);
+	transform: translate3d(0, 3em, 0);
+	-webkit-transition: -webkit-transform 0.25s;
+	transition: transform 0.25s ;
+	-webkit-transition-timing-function: ease-in-out;
+	transition-timing-function: ease-in-out;
+}
+
+/*Changed padding of text!*/
+.input__label-content--effect {
+	padding: 1em 0;
+
+}
+
+/*Blue text and animation*/
+.input__label-content--effect::after {
+	content: attr(data-content);
+	position: absolute;
+	font-weight: 800;
+	bottom: 100%;
+	left: 0;
+	width: 100%;
+	color: cyan;
+	padding: 0.25em 0;
+	font-size: 1em;
+}
+
+.input__field--effect:focus + .input__label--effect,
+.input--filled .input__label--effect {
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+/*Makes font and move up*/
+.input__field--effect:focus + .input__label--effect .input__label-content--effect,
+.input--filled .input__label-content--effect {
+	-webkit-transform: translate3d(0, 100%, 0);
+	transform: translate3d(0, 100%, 0);
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ Footer
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+footer {
+  height: 100px;
+  width: 100%;
+  overflow: auto;
+  background:#4f5051;
+  color:white;
+}
+@media(max-width:785px) {
+  footer{
+    overflow:visible;
+  }
+}
+
+footer a{
+  float: right;
+  padding: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+}
+
+/*About page*/
+.box-div{
+  width: 100%;
+  padding-top: 50px;
+
+}
+
+@media(max-width:700px){
+  .card{
+    height:150px;
+    width:75%;
+    display: block;
+    margin-left: 13%;
+  }
+}
